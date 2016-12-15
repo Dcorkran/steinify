@@ -2,7 +2,7 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgress://localhost/steinify'
+    connection: 'postgres://localhost/steinify'
   },
   production: {
     client: 'pg',
