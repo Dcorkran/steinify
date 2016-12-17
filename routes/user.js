@@ -36,4 +36,11 @@ router.get('/:id/stein', function(req, res, next) {
     res.json('Invalid ID');
   }
 });
+
+router.post('/:id/stein', function(req, res, next) {
+  SteinFunction.postStein(req.body, req.params.id)
+  .then((stein)=> {
+    res.json(stein);
+  })
+}
 module.exports = router;
